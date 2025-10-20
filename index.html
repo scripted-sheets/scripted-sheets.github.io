@@ -1,0 +1,222 @@
+<!--
+  MacroMancer Labs - Single-file portfolio (index.html)
+  - Drop this file into a GitHub Pages repo (name repo username.github.io) or any static host.
+  - Replace placeholder links (#) with your Fiverr/Upwork/Gumroad/email links.
+  - Demo files/screenshots should be uploaded to GitHub (or a public folder) and link to the image/pdf/video URLs.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MacroMancer Labs — Excel Automation & Dashboards</title>
+  <meta name="description" content="Automate Excel reports & dashboards using Python, VBA and Power Query. Semi-anonymous freelance portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a; /* deep navy background for dark header */
+      --card:#0b1220;
+      --muted:#9aa6bf;
+      --accent:#4ADE80; /* green accent */
+      --accent-2:#3B82F6; /* blue accent fallback */
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      --max-width:980px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#E6EEF8;background:linear-gradient(180deg,#071025 0%, #051023 60%);}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--max-width);margin:0 auto;padding:28px}
+
+    /* Header / Hero */
+    header.hero{padding:44px 0 24px;display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center}
+    @media (max-width:920px){header.hero{grid-template-columns:1fr;}}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#02201a}
+    .title{font-size:22px;font-weight:700}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:14px}
+
+    .hero-cta{background:var(--card);padding:22px;border-radius:18px;box-shadow:0 6px 24px rgba(3,10,20,0.6)}
+    .headline{font-size:22px;font-weight:800;margin:0 0 6px}
+    .lead{color:var(--muted);margin:0 0 14px}
+    .btn-row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;font-weight:600;font-size:14px;cursor:pointer}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#042018}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}
+    @media (max-width:920px){.services{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){.services{grid-template-columns:1fr}}
+    .card{background:var(--glass);padding:16px;border-radius:12px}
+    .card h4{margin:0 0 8px}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* Portfolio */
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
+    @media (max-width:920px){.portfolio{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.portfolio{grid-template-columns:1fr}}
+    .project{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:14px;border-radius:12px}
+    .project .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+
+    /* Contact */
+    footer.contact{margin:28px 0;padding:18px;border-radius:12px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);display:flex;align-items:center;justify-content:space-between}
+    @media (max-width:640px){footer.contact{flex-direction:column;gap:12px}}
+
+    /* small utilities */
+    .small{font-size:13px;color:var(--muted)}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);font-weight:600}
+    .screenshot{width:100%;height:170px;border-radius:8px;background:linear-gradient(180deg,#091226,#071826);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+    .footerline{color:var(--muted);font-size:13px;text-align:center;margin-top:18px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div>
+        <div class="brand">
+          <div class="logo">MM</div>
+          <div>
+            <div class="title">MacroMancer Labs</div>
+            <div class="subtitle">Excel automation • Python scripting • Dashboards</div>
+          </div>
+        </div>
+
+        <section style="margin-top:18px;">
+          <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+            <div class="chip">Semi-anonymous • Remote</div>
+            <div class="small">12 hrs/week • Fast turnarounds</div>
+          </div>
+        </section>
+
+        <section style="margin-top:22px">
+          <h3 style="margin:0;font-size:18px">Why choose this service?</h3>
+          <p class="muted" style="max-width:62ch">I automate repetitive Excel work so you can focus on decisions. Solutions include Python (pandas/openpyxl), VBA macros, Power Query, and lightweight ETL. Clear docs and a short demo video included with every delivery.</p>
+        </section>
+
+        <section style="margin-top:18px">
+          <h3 style="margin:0 0 8px">Services</h3>
+          <div class="services">
+            <div class="card">
+              <h4>Quick Fix</h4>
+              <div class="muted">Formula repairs, tidy sheet, and small performance fixes.</div>
+              <div style="margin-top:8px;font-weight:700">From $40</div>
+            </div>
+            <div class="card">
+              <h4>Report Automation</h4>
+              <div class="muted">Python/VBA script to convert raw CSVs into formatted reports.</div>
+              <div style="margin-top:8px;font-weight:700">From $120</div>
+            </div>
+            <div class="card">
+              <h4>Dashboards</h4>
+              <div class="muted">Interactive Excel dashboards + pivot charts + KPIs.</div>
+              <div style="margin-top:8px;font-weight:700">From $250</div>
+            </div>
+            <div class="card">
+              <h4>Templates</h4>
+              <div class="muted">Ready-made templates + setup guide on Gumroad.</div>
+              <div style="margin-top:8px;font-weight:700">From $19</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="hero-cta">
+        <h1 class="headline">Automate your Excel reports & dashboards</h1>
+        <p class="lead">Fast, reliable automation that reduces manual reporting time by 70% or more. Choose Python or VBA workflows — I deliver tested files, documentation, and a short demo video.</p>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#" id="btn-fiverr">💼 Hire on Fiverr</a>
+          <a class="btn btn-ghost" href="#" id="btn-gumroad">🧰 Templates on Gumroad</a>
+          <a class="btn btn-ghost" href="#" id="btn-audit">📧 Request free audit</a>
+        </div>
+
+        <div style="margin-top:14px" class="small">Popular: add a 1-hr consult + setup with premium packages.</div>
+      </aside>
+    </header>
+
+    <main>
+      <section style="margin-top:8px">
+        <h2 style="margin-bottom:8px">Example Projects</h2>
+        <p class="muted">Each demo uses anonymized sample data. Click to view demo files or watch short demo videos.</p>
+
+        <div class="portfolio">
+          <div class="project">
+            <div class="screenshot">Sales Dashboard (demo screenshot)</div>
+            <div style="margin-top:10px;font-weight:700">Sales Dashboard Auto-Updater</div>
+            <div class="meta">Python script + Excel template — converts monthly CSVs into pivot dashboards.</div>
+            <div style="display:flex;gap:8px;margin-top:10px">
+              <a class="btn btn-ghost" href="#">View Demo</a>
+              <a class="btn btn-ghost" href="#">Download Sample</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="screenshot">Task Tracker (demo)</div>
+            <div style="margin-top:10px;font-weight:700">Task Tracker Automation</div>
+            <div class="meta">Auto-color status, auto-fill completed date, and progress summary sheet.</div>
+            <div style="display:flex;gap:8px;margin-top:10px">
+              <a class="btn btn-ghost" href="#">View Demo</a>
+              <a class="btn btn-ghost" href="#">Download Sample</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="screenshot">Invoice Generator</div>
+            <div style="margin-top:10px;font-weight:700">Invoice Generator Tool</div>
+            <div class="meta">Fill a form and generate a PDF invoice automatically. Good for freelancers.</div>
+            <div style="display:flex;gap:8px;margin-top:10px">
+              <a class="btn btn-ghost" href="#">View Demo</a>
+              <a class="btn btn-ghost" href="#">Download Sample</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:6px">
+        <h2>How I work</h2>
+        <div class="muted" style="max-width:68ch">Short process: 1) Share an anonymized sample file or grant temporary access, 2) I do a quick audit and send a proposal, 3) I deliver a tested solution + a 2–3 min demo video and docs. Payment via Fiverr/Upwork/Gumroad or direct invoice.</div>
+      </section>
+
+      <section style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+        <div style="min-width:280px">
+          <h3 style="margin:0">Want a free 5-minute audit?</h3>
+          <p class="muted" style="margin:8px 0">Send a sample file and I’ll return a short checklist of what can be automated and an estimated price.</p>
+        </div>
+        <div style="display:flex;gap:8px">
+          <a class="btn btn-primary" href="#">Request audit</a>
+          <a class="btn btn-ghost" href="#">Hire on Upwork</a>
+        </div>
+      </section>
+    </main>
+
+    <footer style="margin-top:22px">
+      <div class="contact">
+        <div>
+          <div style="font-weight:700">Contact & Links</div>
+          <div class="small" style="margin-top:6px">Replace links below with your profiles and email.</div>
+          <div style="margin-top:8px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn btn-ghost" href="#">Fiverr</a>
+            <a class="btn btn-ghost" href="#">Upwork</a>
+            <a class="btn btn-ghost" href="#">Gumroad</a>
+            <a class="btn btn-ghost" href="mailto:hello@macromancer.com">Email</a>
+          </div>
+        </div>
+        <div class="small" style="text-align:right;min-width:240px">Based in: Remote • 12 hrs/week • Semi-anonymous brand</div>
+      </div>
+
+      <div class="footerline">© 2025 MacroMancer Labs — Excel Automation & Reporting Solutions</div>
+    </footer>
+  </div>
+
+  <script>
+    // Lightweight link hooks: change these IDs to real URLs after publishing.
+    document.getElementById('btn-fiverr').addEventListener('click',function(e){e.preventDefault();window.location.href = '#';});
+    document.getElementById('btn-gumroad').addEventListener('click',function(e){e.preventDefault();window.location.href = '#';});
+    document.getElementById('btn-audit').addEventListener('click',function(e){e.preventDefault();window.location.href = 'mailto:hello@macromancer.com?subject=Free%20Audit%20Request';});
+  </script>
+</body>
+</html>
